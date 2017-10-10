@@ -1,0 +1,145 @@
+
+
+
+
+
+    <div class="row">
+
+      <div class="col-sm-8" style="background-color:lavender;">
+        <form action='/urls' method ='post' id="special-form">
+          <input type="text" name="ori_url" class="form-control input-lg" placeholder="Paste a link to shorten it">
+    <!-- end of col-sm-8 -->
+      </div>
+
+      <div class="col-sm-4" style="background-color:lavender;">
+         <input type="submit" class="btn btn-primary btn-lg"  value="SHORTEN">
+      <!-- end of col-sm-4 -->
+      </div>
+
+        </form>
+
+    <!-- end of row -->
+    </div>
+    <!-- end of container fluid -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="w3-container w3-teal">
+  <h1>Welcome to Bitly</h1>
+  <h2 id="sorry"></h2>
+  <h3>Header</h3>
+</div>
+
+
+<div class="w3-container">
+
+  <section class="w3-panel w3-round-xxlarge w3-teal">
+     <h3>THE LINK KNOWS ALL. SO CAN YOU</h3>
+     <h4>Measure your links with Bitly, the world's leading link management platform</h4>
+  </section>
+
+
+
+
+
+
+
+
+<!-- former_index.erb -->
+<!-- this file contains the examples that Kevin covered during the class  -->
+
+
+
+<% if rand(1..6) > 3 %>
+  <p>You look good</p>
+<% else %>
+    <p>You look fabulous</p>
+<% end %>
+
+
+
+
+<a href="/contactus"> get to know me</a>
+<h1>Hello World</h1>
+
+
+<div id ="box">
+    <ul>
+    <% Post.all.each do |p| %>
+        <h3><%= p.title %></h3>
+             <li><p><%= p.description %></p></li>
+    <% end %>
+    <ul>
+</div>
+
+
+<!-- <form action='/submit' method ='post'>
+    <label>Type some text</label>
+    <input type="text" name ="title" placeholder="Type here">
+    <input type="text" name ="description" placeholder="description">
+   <! <textarea name='description' placeholder = 'Type description'>
+    <input type="submit" value="change the world">
+</form> -->
+
+
+
+
+<ul>
+    <% ["hello","darkness","my","old","friend"].each do |text| %>
+        <li><%= text %></li>
+    <% end %>
+</ul>
+
+
+
+
+ <h1>I love you</h1>
+     <ul>
+       <li>Mango</li>
+       <li>Persimmon</li>
+       <li>Sweet Potato</li>
+    </ul>
